@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <style media="screen" type="text/css">
+    td {
+      width:40px;
+      height:40px;
+    }
+    .circle {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+    .num-input {
+      width: 30px;
+      border-radius: 20%;
+    }
+  </style>
+  <title>Marble Solitaire</title>
+</head>
+<body style="font-family: Helvetica,  sans-serif, sans">
+Arm thickness: <input id="arm" type="text" class="num-input">
+<button id="new-game" style="border-radius:5px">New Game</button>
+<table id="board" border="0"></table>
+<div style="display:none" id="score-disp">Score: <span id="score"></span></div>
+<div id="msg"></div>
+<script src="MarbleSolitaireView.js"></script>
+<script src="MarbleSolitaireController.js"></script>
+<script src="MarbleSolitaireModel.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
